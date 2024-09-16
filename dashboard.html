@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema Financiero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="dashboard-sidebar">
+        <h2>Opciones</h2>
+        <ul>
+            <li><a href="#ingresos">Ingresos Mensuales</a></li>
+            <li><a href="#egresos">Egresos Mensuales</a></li>
+            <li><a href="#balance">Balance Anual</a></li>
+            <li><a href="#proyeccion">Proyección de Gastos</a></li>
+            <li><a href="#otras-estadisticas">Otras Estadísticas</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenedor del dashboard -->
+    <div class="dashboard-container">
+        <!-- Botón de cerrar sesión -->
+        <div class="dashboard-top-bar">
+            <button class="dashboard-logout-btn" onclick="location.href='index.html'">Cerrar Sesión</button>
+        </div>
+
+        <h2>Dashboard Financiero</h2>
+
+        <!-- Sección de gráficos -->
+        <div class="dashboard-chart-container" id="ingresos">
+            <div class="dashboard-chart">
+                <h3>Ingresos Mensuales</h3>
+                <img src="/grafica4.avif" alt="Gráfico de Ingresos">
+            </div>
+            <div class="dashboard-chart" id="egresos">
+                <h3>Egresos Mensuales</h3>
+                <img src="/egresos mensuales.webp" alt="Gráfico de Egresos">
+            </div>
+        </div>
+
+        <div class="dashboard-chart-container">
+            <div class="dashboard-chart" id="balance">
+                <h3>Balance Anual</h3>
+                <img src="/balance.avif" alt="Gráfico de Balance">
+            </div>
+            <div class="dashboard-chart" id="proyeccion">
+                <h3>Proyección de Gastos</h3>
+                <img src="/grafica-1_1.avif" alt="Gráfico de Proyección de Gastos">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
